@@ -278,25 +278,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         </header>
         <main id="site-main" className="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
-            {/* TODO: no-image css tag? */}
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
-              <PostFullHeader>
-                <PostFullMeta>
-                  <PostFullMetaDate dateTime={post.frontmatter.date}>
-                    {post.frontmatter.userDate}
-                  </PostFullMetaDate>
-                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
-                    <>
-                      <DateDivider>/</DateDivider>
-                      <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}>
-                        {post.frontmatter.tags[0]}
-                      </Link>
-                    </>
-                  )}
-                </PostFullMeta>
-                <PostFullTitle>{post.frontmatter.title}</PostFullTitle>
-              </PostFullHeader>
-
               {post.frontmatter.image && post.frontmatter.image.childImageSharp && (
                 <PostFullImage>
                   <Img
@@ -305,13 +287,8 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                   />
                 </PostFullImage>
               )}
-              <PostContent htmlAst={post.htmlAst} />
 
-              {/* The big email subscribe modal content */}
-
-              <PostFullFooter>
-                <PostFullFooterRight authorId={post.frontmatter.author.id} />
-              </PostFullFooter>
+              <PostContent htmlAst={post.htmlAst} title={post.frontmatter.title} />
             </article>
           </div>
         </main>
@@ -356,6 +333,7 @@ export const query = graphql`
         userDate: date(formatString: "D MMMM YYYY")
         date
         tags
+        test
         image {
           childImageSharp {
             fluid(maxWidth: 3720) {
