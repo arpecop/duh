@@ -18,15 +18,12 @@ export default function HTML(props) {
         <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
         {props.postBodyComponents}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-        <script>
-          {`
-                   (adsbygoogle = window.adsbygoogle || []).push({
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
     google_ad_client: "ca-pub-5476404733919333",
     enable_page_level_ads: true
   });
-                  `}
-        </script>
+</script>
       </body>
     </html>
   );
