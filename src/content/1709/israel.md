@@ -4,7 +4,7 @@ title: 'Израел иска земята на Палестина, но не и
 author: Ghost
 tags: ['арестуван', 'калифорния']
 date: '2019-09-17T23:46:37.121Z'
-image: img/11.jpg
+image: ../img/11.jpg
 draft: false
 ---
 

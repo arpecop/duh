@@ -3,7 +3,7 @@ layout: post
 title: 'С петрола под атака, Тръмп отчита уважението си към Саудитска арабия'
 author: Ghost
 tags: ['trump', 'usa']
-image: img/trump.jpg
+image: ../img/trump.jpg
 date: '2019-09-17T23:46:37.121Z'
 draft: false
 ---

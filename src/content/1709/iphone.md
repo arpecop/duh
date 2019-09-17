@@ -4,7 +4,7 @@ title: 'Преглед на iPhone 11 и 11 Pro: Мислене по разли�
 author: Ghost
 tags: ['iphone', 'айфон','apple','ios']
 date: '2019-09-17T23:46:37.121Z'
-image: img/iphone1.jpg
+image: ../img/iphone1.jpg
 draft: false
 ---
 
