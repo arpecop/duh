@@ -137,26 +137,16 @@ const IndexPage: React.FC<IndexProps> = props => {
             backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
           }}
         >
-          <div css={inner}>
-            <SiteHeaderContent>
-              <SiteTitle>
-                {props.data.logo ? (
-                  <img
-                    style={{ maxHeight: '45px' }}
-                    src={props.data.logo.childImageSharp.fixed.src}
-                    alt={config.title}
-                  />
-                ) : (
-                  config.title
-                )}
-              </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
-            </SiteHeaderContent>
-            <SiteNav isHome />
-          </div>
+          <div css={inner}></div>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
+            <div>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+            </div>
             <div css={[PostFeed, PostFeedRaise]}>
               {props.data.allMarkdownRemark.edges.map(post => {
                 // filter out drafts in production

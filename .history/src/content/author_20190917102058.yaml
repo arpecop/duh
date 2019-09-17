@@ -1,8 +1,8 @@
 - id: Ghost
   avatar: avatars/ghost.png
-  bio: Новини от страната и света
+  bio: The professional publishing platform
   twitter: TryGhost
-  facebook: аrpecop
+  facebook: ghost
   website: https://ghost.org/
   location: On a plane
 - id: Another Author

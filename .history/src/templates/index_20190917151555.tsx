@@ -131,30 +131,8 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta property="og:image:height" content={height} />
       </Helmet>
       <Wrapper>
-        <header
-          css={[outer, SiteHeader]}
-          style={{
-            backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
-          }}
-        >
-          <div css={inner}>
-            <SiteHeaderContent>
-              <SiteTitle>
-                {props.data.logo ? (
-                  <img
-                    style={{ maxHeight: '45px' }}
-                    src={props.data.logo.childImageSharp.fixed.src}
-                    alt={config.title}
-                  />
-                ) : (
-                  config.title
-                )}
-              </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
-            </SiteHeaderContent>
-            <SiteNav isHome />
-          </div>
-        </header>
+        <SiteNav isHome />
+
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
             <div css={[PostFeed, PostFeedRaise]}>

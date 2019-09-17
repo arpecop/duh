@@ -49,8 +49,8 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Дух',
-  description: 'Новини от страната и света',
+  title: 'Ghost',
+  description: 'The professional publishing platform',
   coverImage: 'img/blog-cover.jpg',
   logo: 'img/ghost-logo.png',
   lang: 'en',

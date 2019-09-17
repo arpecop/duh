@@ -52,7 +52,7 @@ interface TagTemplateProps {
 }
 
 const Tags: React.FC<TagTemplateProps> = props => {
-  const tag = (props.pageContext.tag) ? props.pageContext.tag : '';
+  const tag = props.pageContext.tag ? props.pageContext.tag : '';
   const { edges, totalCount } = props.data.allMarkdownRemark;
   const tagData = props.data.allTagYaml.edges.find(
     n => n.node.id.toLowerCase() === tag.toLowerCase(),
@@ -90,9 +90,9 @@ const Tags: React.FC<TagTemplateProps> = props => {
           css={[outer, SiteHeader]}
           style={{
             backgroundImage:
-              tagData && tagData.node.image ?
-                `url('${tagData.node.image.childImageSharp.fluid.src}')` :
-                '',
+              tagData && tagData.node.image
+                ? `url('${tagData.node.image.childImageSharp.fluid.src}')`
+                : '',
           }}
         >
           <div css={inner}>
@@ -100,15 +100,7 @@ const Tags: React.FC<TagTemplateProps> = props => {
             <SiteHeaderContent>
               <SiteTitle>{tag}</SiteTitle>
               <SiteDescription>
-                {tagData && tagData.node.description ? (
-                  tagData.node.description
-                ) : (
-                  <>
-                    A collection of {totalCount > 1 && `${totalCount} posts`}
-                    {totalCount === 1 && '1 post'}
-                    {totalCount === 0 && 'No posts'}
-                  </>
-                )}
+                {tagData && tagData.node.description ? tagData.node.description : null}
               </SiteDescription>
             </SiteHeaderContent>
           </div>
