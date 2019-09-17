@@ -27,6 +27,8 @@ export default function HTML(props) {
   });
                   `}
         </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29127191-2"></script>
+        <script>{`function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-29127191-2")`}</script>
       </body>
     </html>
   );
