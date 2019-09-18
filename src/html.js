@@ -23,17 +23,8 @@ export default function HTML(props) {
         {props.postBodyComponents}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-        <script>
-        
-                   (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: '',
-    enable_page_level_ads: true
-  });
-               
-        </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29127191-2"></script>
         <script async src="https://arpecop.github.io/react/blog.js"></script>
-     
       </body>
     </html>
   );
