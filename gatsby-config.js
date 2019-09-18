@@ -15,7 +15,7 @@ module.exports = {
       options: {
         trackingId: 'UA-29127191-2',
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        head: true,
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
@@ -34,6 +34,12 @@ module.exports = {
         sampleRate: 5,
         siteSpeedSampleRate: 10,
         cookieDomain: 'example.com',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-5476404733919333`,
       },
     },
     'gatsby-plugin-sitemap',

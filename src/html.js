@@ -21,18 +21,6 @@ export default function HTML(props) {
         </noscript>
         <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
         {props.postBodyComponents}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-        <script>
-          {`
-                   (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: 'ca-pub-5476404733919333',
-    enable_page_level_ads: true
-  });
-                  `}
-        </script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29127191-2"></script>
-        <script>{`function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-29127191-2")`}</script>
       </body>
     </html>
   );
