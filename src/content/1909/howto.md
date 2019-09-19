@@ -4,7 +4,7 @@ title: 'Как да изживеем чудесата като пораснал�
 author: Ghost
 tags: ['mac']
 date: '2019-09-19T23:47:38.121Z'
-image: ./how.jpg
+image: ./how.png
 draft: false
 ---
 
