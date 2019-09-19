@@ -8,12 +8,9 @@ import { css } from '@emotion/core';
 import { Helmet } from 'react-helmet';
 
 import Footer from '../components/Footer';
-import SiteNav from '../components/header/SiteNav';
+
 import PostCard from '../components/PostCard';
 import PostContent from '../components/PostContent';
-import PostFullFooter from '../components/PostFullFooter';
-import PostFullFooterRight from '../components/PostFullFooterRight';
-import ReadNextCard from '../components/ReadNextCard';
 
 import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
