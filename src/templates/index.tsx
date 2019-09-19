@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 import Helmet from 'react-helmet';
 
 import Footer from '../components/Footer';
-import SiteNav from '../components/header/SiteNav';
+
 import PostCard from '../components/PostCard';
 import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
@@ -136,20 +136,8 @@ const IndexPage: React.FC<IndexProps> = props => {
                     >
                          <div css={inner}>
                               <SiteHeaderContent>
-                                   <SiteTitle>
-                                        {props.data.logo ? (
-                                             <img
-                                                  style={{ maxHeight: '45px' }}
-                                                  src={props.data.logo.childImageSharp.fixed.src}
-                                                  alt={config.title}
-                                             />
-                                        ) : (
-                                             config.title
-                                        )}
-                                   </SiteTitle>
                                    <SiteDescription>{config.description}</SiteDescription>
                               </SiteHeaderContent>
-                              <SiteNav isHome />
                          </div>
                     </header>
                     <main id="site-main" css={[SiteMain, outer]}>
