@@ -278,29 +278,18 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                                    <PostContent htmlAst={post.htmlAst} title={post.frontmatter.title} />
                               </article>
                          </div>
+                         <aside className="read-next" css={outer}>
+                              <div css={inner}>
+                                   <ReadNextFeed>
+                                        {props.pageContext.prev && <PostCard post={props.pageContext.prev} />}
+                                        {props.pageContext.next && <PostCard post={props.pageContext.next} />}
+                                   </ReadNextFeed>
+                              </div>
+                         </aside>
                     </main>
-                    <header css={[outer, SiteHeader]}>
-                         <div css={inner}>
-                              <SiteNav />
-                         </div>
-                    </header>
 
                     {/* Links to Previous/Next posts */}
-                    <aside className="read-next" css={outer}>
-                         <div css={inner}>
-                              <ReadNextFeed>
-                                   {props.data.relatedPosts && (
-                                        <ReadNextCard
-                                             tags={post.frontmatter.tags}
-                                             relatedPosts={props.data.relatedPosts}
-                                        />
-                                   )}
 
-                                   {props.pageContext.prev && <PostCard post={props.pageContext.prev} />}
-                                   {props.pageContext.next && <PostCard post={props.pageContext.next} />}
-                              </ReadNextFeed>
-                         </div>
-                    </aside>
                     <Footer />
                </Wrapper>
           </IndexLayout>
