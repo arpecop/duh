@@ -2,7 +2,7 @@
 layout: post
 title: 'Преглед на iPhone 11 и 11 Pro: Мислене по различен начин в златната ера на смартфоните'
 author: Ghost
-tags: ['iphone', 'айфон', 'apple', 'ios']
+tags: ['iphone', 'айфон', 'apple', 'ios', 'калъфи','калъф']
 date: '2019-09-17T23:46:37.121Z'
 image: ../img/iphone1.jpg
 draft: false
