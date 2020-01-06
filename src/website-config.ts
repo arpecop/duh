@@ -49,21 +49,21 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Дух',
-  description: 'Новини от страната и света',
-  coverImage: 'img/blog-cover.jpg',
-  logo: 'img/ghost-logo.png',
-  lang: 'en',
-  siteUrl: 'https://gatsby-casper.netlify.com',
-  facebook: 'https://www.facebook.com/ghost',
-  twitter: 'https://twitter.com/tryghost',
+  title: "Дух",
+  description: "Новини от страната и света",
+  coverImage: "img/blog-cover.jpg",
+  logo: "img/ghost-logo.png",
+  lang: "en",
+  siteUrl: "https://duh.netlify.com",
+  facebook: "https://www.facebook.com/ghost",
+  twitter: "https://twitter.com/tryghost",
   showSubscribe: true,
   mailchimpAction:
-    'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
-  mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
-  mailchimpEmailFieldName: 'MERGE0',
-  googleSiteVerification: 'GoogleCode',
-  footer: 'is based on Gatsby Casper',
+    "https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75",
+  mailchimpName: "b_a89b6987ac248c81b0b7f3a0f_7d777b7d75",
+  mailchimpEmailFieldName: "MERGE0",
+  googleSiteVerification: "GoogleCode",
+  footer: "is based on Gatsby Casper"
 };
 
 export default config;
